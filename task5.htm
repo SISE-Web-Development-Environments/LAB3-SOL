@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<script type="text/javascript"> 
+ if (window.addEventListener){ 
+ window.addEventListener( "load", start, false );
+ }
+ else if (window.attachEvent){
+ 	window.attachEvent( "onload", start);
+ }
+ function start()
+ {
+ 	if (button1.addEventListener){ 
+ 		button1.addEventListener( "click", buttonClicked, false );
+ 	}
+ 	else if (button1.attachEvent){
+ 		button1.attachEvent( "onclick", buttonClicked);
+ 	}
+ }
+ function buttonClicked()
+ {
+ p1.innerText= "hello";
+ }
+</script>
+</HEAD>
+<BODY>
+<input type=button id="button1" value="Click Me">
+<p id="p1"></p>
+</BODY>
+</HTML>

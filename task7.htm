@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0055)http://www.ise.bgu.ac.il/courses/internet/square16.html -->
+<HTML>
+<HEAD>
+<SCRIPT type="text/javascript">  
+	window.setInterval("UpdateTime()", 1000 );
+	function UpdateTime()
+	{
+		var currentTime = new Date ( );
+		hours.innerText = currentTime.getHours ( );
+		minutes.innerText = currentTime.getMinutes ( );
+		seconds.innerText = currentTime.getSeconds ( );
+	}
+</SCRIPT>
+</HEAD>
+<BODY>
+<p id="hours"></p>
+<p id="minutes"></p>
+<p id="seconds"></p>
+</BODY>
+</HTML>
